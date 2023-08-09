@@ -57,6 +57,7 @@ class _mainscreenState extends State<mainscreen> {
                       Padding(
                         padding: EdgeInsets.only(bottom: 50, top: 20),
                         child: ListView.builder(
+                          physics: ScrollPhysics(),
                           shrinkWrap: true,
                           itemCount: songs.length,
                           itemBuilder: (context, index) {
